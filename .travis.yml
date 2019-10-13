@@ -4,12 +4,9 @@ script:
 - mkdir _build
 - dot -Tpdf tasks.gv -o _build/tasks.pdf
 deploy:
-  provider: pages
+  provider: releases
+  file:
+  - _build/tasks.pdf
   skip_cleanup: true
-  github_token: 85b8c5d9cc84d19be1eb453a0e41deb708f8d027
-  keep_history: true
-  on:
-    branch: master
-
 
 
