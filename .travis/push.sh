@@ -13,7 +13,7 @@ git config --global user.email "travis@travis-ci.org"
 git config --global user.name "$TRAVIS_USERNAME"
 
 git checkout -b travis-temp
-git add *.pdf
+git add _build/tasks.pdf
 git commit --message "Travis build"
 git checkout master
 git merge travis-temp
