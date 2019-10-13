@@ -23,7 +23,7 @@ digraph D {
      <tr><td align="left"><font color="darkgreen">done</font></td></tr>
    </table>>];
 
-  task_cooking [ label=<
+  task_cook [ label=<
    <table border="1" cellborder="0" cellspacing="1">
      <tr><td align="left"><b>Task 5</b></td></tr>
      <tr><td align="left">Cook</td></tr>
@@ -49,6 +49,6 @@ digraph D {
   task_ingredients -> task_cook;
   task_invitation  -> task_cook;
   task_table       -> task_eat;
-  task_cooking        -> task_eat;
+  task_cook        -> task_eat;
 
 }
