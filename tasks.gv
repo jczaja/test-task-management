@@ -49,6 +49,6 @@ digraph D {
   task_ingredients -> task_cook;
   task_invitation  -> task_cook;
   task_table       -> task_eat;
-  task_cook        -> task_eat;
+  task_cooking        -> task_eat;
 
 }
