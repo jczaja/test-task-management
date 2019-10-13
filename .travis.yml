@@ -1,0 +1,16 @@
+before_install:
+- "sudo apt-get update && sudo apt-get install --no-install-recommends graphviz pdflatex"
+script:
+- mkdir _build
+- dot -Tpdf tasks.gv -o _build/tasks.pdf
+deploy:
+  provider: releases
+  api_key:
+    secure: 85b8c5d9cc84d19be1eb453a0e41deb708f8d027
+  file:
+  - _build/taksks.pdf
+  skip_cleanup: true
+
+
+
+
