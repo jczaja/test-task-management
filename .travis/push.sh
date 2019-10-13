@@ -18,5 +18,5 @@ git commit --message "Travis build"
 git checkout master
 git merge travis-temp
 
-git remote add origin-temp https://${GH_TOKEN}@github.com/EAL-IT-Technology/ITT3-Special-subjects.git
+git remote add origin-temp https://${GH_TOKEN}@github.com/jczaja/test-task-management.git
 git push --set-upstream origin-temp
