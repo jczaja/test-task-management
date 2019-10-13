@@ -3,10 +3,6 @@ before_install:
 script:
 - mkdir _build
 - dot -Tpdf tasks.gv -o _build/tasks.pdf
-deploy:
-  provider: releases
-  file:
-  - _build/tasks.pdf
-  skip_cleanup: true
 
-
+after_success:
+ - /bin/sh .travis/push.sh
