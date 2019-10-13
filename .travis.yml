@@ -1,5 +1,5 @@
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends graphviz pdflatex"
+- "sudo apt-get update && sudo apt-get install --no-install-recommends graphviz"
 script:
 - mkdir _build
 - dot -Tpdf tasks.gv -o _build/tasks.pdf
